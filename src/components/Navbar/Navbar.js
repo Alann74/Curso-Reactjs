@@ -1,5 +1,6 @@
 import './Navbar.css'
 
+// el Navbar empieza si o si con mayúscula.
 const Navbar = () => {
     return (
         <nav className='navbar'> 

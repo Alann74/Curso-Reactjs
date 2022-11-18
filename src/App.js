@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* ACA AGREGAR TODOS LOS COMPONENTES */}
-        <Navbar/>
+        <Navbar color="green"/>
     </div>
   );
 }
