@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import CartWidget from '../CartWidget/CartWidget'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function Navbar1() {
   return (
@@ -12,7 +13,7 @@ function Navbar1() {
             <img
               alt="logo zafira"
               src="/images/logo.png"
-              width="30"
+              width="35"
               height="30"
               className="d-inline-block align-top"
             />{' '}
@@ -29,8 +30,9 @@ function Navbar1() {
           </Nav>
         </Container>
       </Navbar>
-      <CartWidget />
-      
+      <CartWidget/>
+      <Nav.Link >......</Nav.Link>
+      {/* uso este ultimo para darle separacion porque con margin right no pude */}
       </Navbar>
     </>
   );
