@@ -1,9 +1,16 @@
 
-.btn {
+/* .btn {
     color: blue
 }
 
-.navbar {
+.Navbar {
     display: flex;
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;    
 }
+
+.Cont{
+    text-align: center;
+    width: 200px;
+} */
