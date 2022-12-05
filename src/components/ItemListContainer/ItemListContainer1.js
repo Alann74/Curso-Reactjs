@@ -1,6 +1,6 @@
 
     const ItemListContainer1 = ({greeting}) => {
-        // const { greeting } = props
+        // const { greeting } = props.
         console.log(greeting)
         return <h1>{greeting}</h1> 
 
