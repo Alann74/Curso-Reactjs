@@ -11,7 +11,7 @@ import Nav from 'react-bootstrap/Nav';
 import { useState } from 'react';
 
 
-//
+//0
 function Blusas () {
   const [page, setPage] = useState('productos')
   const navigate = useNavigate()
