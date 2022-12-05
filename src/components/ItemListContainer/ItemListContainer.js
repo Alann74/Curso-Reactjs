@@ -20,9 +20,13 @@ const ItemListContainer = () => {
         <div>
             <h1>Sumar clicks</h1>
             <h2>{count}</h2>
-            <button onClick={() => setCount(count + 1)}>sumar uno</button>
+            <button onClick={() => setCount(count + 1)} className="btn btn-primary">sumar uno</button>
         </div>
     )
 }
+// esto va en APP
+/* <button className="btn btn-primary" onClick={() => setShow(!show)}>show/hide</button> */
+/* <Counter initial={0} stock={15} onAdd={handleOnAdd}/> */
+/* /* { show ? <ItemListContainer /> : null} */
 
 export default ItemListContainer

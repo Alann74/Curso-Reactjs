@@ -3,11 +3,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import CartWidget from '../CartWidget/CartWidget'
 import "bootstrap/dist/css/bootstrap.min.css"
+import { useState } from 'react';
+import {Link} from 'react-router-dom'
+import './NavBar.css'
 
 function Navbar1() {
+  const [page, setPage] = useState('productos')
+
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" className='Navbar'>
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -24,9 +29,10 @@ function Navbar1() {
         <Container className='Cont'>
           <Navbar.Brand href="#Menu">Menú</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#Remeras">Remeras</Nav.Link>
-            <Nav.Link href="#Blusas">Blusas</Nav.Link>
-            <Nav.Link href="#Pantalones">Pantalones</Nav.Link>
+            <Nav.Link ><Link to='remera' className='Cont'>Remeras</Link></Nav.Link>
+            <Nav.Link onClick={() => setPage('blusas')} ><Link to='blusa' className='Cont'>Blusa</Link></Nav.Link>
+            <Nav.Link onClick={() => setPage('pantalones')}>Pantalones</Nav.Link>
+            {/* {page === 'pantalones' ? <Pantalones/> : null } */}
           </Nav>
         </Container>
       </Navbar>

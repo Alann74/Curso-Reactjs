@@ -1,4 +1,7 @@
 
+.Navbar {
+    text-decoration: none;  
+}
 /* .btn {
     color: blue
 }
@@ -9,8 +12,14 @@
     margin-left: 20px;
     margin-right: 20px;    
 }
+*/
 
 .Cont{
-    text-align: center;
-    width: 200px;
-} */
+    text-decoration: none;
+    color: rgb(163, 164, 164);
+} 
+
+.Cont.hover{
+    color: black;
+    text-decoration: none;
+}

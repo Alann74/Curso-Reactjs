@@ -16,16 +16,20 @@ const Counter = ({ initial, stock, onAdd }) => {
         }
     }
 
-    const reset = () => {
-        setCount(initial)
-    }
+    // const reset = () => {
+    //     setCount(initial)
+    // }
 
     return (
         <div>
             <h2>{count}</h2>
-            <button onClick={() => increment()}>sumar click</button>
-            <button onClick={() => reset()}>reset</button>
-            <button onClick={() => onAdd(count)}>agregar al carrito</button>
+            <button  className="btn btn-secondary" onClick={() => increment()}>Comprar</button>
+            {/* <button  className="btn btn-secondary"onClick={() => reset()}>Borrar</button> */}
+            <br></br>
+            <br></br>
+            <button  className="btn btn-secondary"onClick={() => onAdd(count)}>Agregar al carrito</button>
+            <br></br>
+            <br></br>
         </div>
     )
 }
