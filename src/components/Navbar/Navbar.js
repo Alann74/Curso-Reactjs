@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import './NavBar.css'
 
 function Navbar1() {
-  const [page, setPage] = useState('productos')
+  const [ setPage] = useState('productos')
 
   return (
     <>
@@ -18,8 +18,8 @@ function Navbar1() {
             <img
               alt="logo zafira"
               src="/images/logo.png"
-              width="35"
-              height="30"
+              width="65"
+              height="50"
               className="d-inline-block align-top"
             />{' '}
             ZAFIRA
@@ -27,7 +27,7 @@ function Navbar1() {
         </Container>
         <Navbar bg="dark" variant="dark">
         <Container className='Cont'>
-          <Navbar.Brand href="#Menu">Menú</Navbar.Brand>
+          <Navbar.Brand><Link to='menu' className='Cont'>Menú</Link></Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link ><Link to='remera' className='Cont'>Remeras</Link></Nav.Link>
             <Nav.Link onClick={() => setPage('blusas')} ><Link to='blusa' className='Cont'>Blusa</Link></Nav.Link>

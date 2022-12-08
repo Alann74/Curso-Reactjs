@@ -15,11 +15,11 @@ function VerMas() {
             <Card.Text>
                 Blusa lisa lino
             </Card.Text>
-            <Button variant="secondary"><Link to='' className='Cont'>Volver</Link></Button>
+            <Button variant="secondary"><Link to='/blusa' className='Cont'>Volver</Link></Button>
         </Card.Body>
         </Card>
         </div>        
         );
-    }
+    }//
 
 export default VerMas

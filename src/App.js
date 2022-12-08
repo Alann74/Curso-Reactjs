@@ -9,7 +9,7 @@ import Product from './components/Product/Product';
 import Remeras from './components/Product/Remeras';
 import Blusas from './components/Product/Blusas';
 import VerMas from './components/Product/VerMas';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,11 +18,13 @@ function App() {
         <Navbar/>            
         <ItemListContainer1 className="saludo" greeting='Productos'/>      
           <Routes>
+            <Route path='' element= {<Product/>} /> 
             <Route path='/' element= {<Product/>} /> 
             <Route path='/blusa' element= {<Blusas/> } /> 
             <Route path='/remera' element= {<Remeras/> } /> 
             <Route path='/blusa/Art.1974' element= {<VerMas/> } /> 
           </Routes>
+        <Footer/>    
         </BrowserRouter>
    </div>
   );
