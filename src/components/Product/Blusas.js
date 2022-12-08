@@ -5,16 +5,18 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import './Product.css';
 import Counter from '../Counter/Counter';
-// import VerMas from './VerMas.js'
 import {Link, useNavigate} from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import { useState } from 'react';
-
+import { getBlusas } from '../../asyncMock'
 
 //0
-function Blusas () {
+function Blusas ({getBlusas} ) { 
+
   const [page, setPage] = useState('productos')
   const navigate = useNavigate()
+  
+  const blusa = ({getBlusas})
 
     return (
     <div className="App1">
@@ -26,7 +28,7 @@ function Blusas () {
               <Card.Body>
                 <Card.Title>Blusa</Card.Title>
                 <Card.Text>
-                  Blusa estampada. Art.1974
+                  {blusa.nombre}w
                 </Card.Text>
                 <Counter initial={0} stock={15}>BLUSAS</Counter>
                 <Nav.Link onClick={() => navigate('Art.1974')}>
