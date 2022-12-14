@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { useState } from 'react';
 import {Link} from 'react-router-dom'
 import './NavBar.css'
+import * as ReactBootStrap from "react-bootstrap";
+import { BrowserRouter as router } from "react-router-dom";
 
 function Navbar1() {
   const [ setPage] = useState('productos')
@@ -22,16 +24,30 @@ function Navbar1() {
               height="50"
               className="d-inline-block align-top"
             />{' '}
-            ZAFIRA
+            
           </Navbar.Brand>
         </Container>
         <Navbar bg="dark" variant="dark">
         <Container className='Cont'>
           <Navbar.Brand><Link to='menu' className='Cont'>Menú</Link></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link ><Link to='remera' className='Cont'>Remeras</Link></Nav.Link>
+            {/* <Nav.Link ><Link to='remera' className='Cont'>Remeras</Link></Nav.Link>
             <Nav.Link onClick={() => setPage('blusas')} ><Link to='blusa' className='Cont'>Blusa</Link></Nav.Link>
-            <Nav.Link onClick={() => setPage('pantalones')}>Pantalones</Nav.Link>
+            <Nav.Link onClick={() => setPage('pantalones')}>Pantalones</Nav.Link> */}
+            <ReactBootStrap.NavDropdown
+              title="Productos"
+              id="collasible-nav-dropdown"
+            >
+              <ReactBootStrap.NavDropdown.Item>
+                <Nav.Link ><Link to='remera' className='Cont'>Remeras</Link></Nav.Link>
+              </ReactBootStrap.NavDropdown.Item>
+              <ReactBootStrap.NavDropdown.Item>
+                <Nav.Link onClick={() => setPage('blusas')} ><Link to='blusa' className='Cont'>Blusa</Link></Nav.Link>
+              </ReactBootStrap.NavDropdown.Item>
+              <ReactBootStrap.NavDropdown.Item>
+                Pantalones
+              </ReactBootStrap.NavDropdown.Item>
+            </ReactBootStrap.NavDropdown>
             {/* {page === 'pantalones' ? <Pantalones/> : null } */}
           </Nav>
         </Container>

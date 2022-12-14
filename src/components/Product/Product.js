@@ -18,7 +18,7 @@ const Product = () => {
 
   return(
     <div>
-      <h1>BLusasss</h1>
+      <h1>Blusasss</h1>
       <Blusas productos={Product}/>
     </div>
   )

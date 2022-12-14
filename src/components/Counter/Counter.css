@@ -1,0 +1,13 @@
+.button {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    background: #ff0349;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Euclid Circular A";
+    color: #f9f9f9;
+    padding: 0 15px 0 8px;
+}
