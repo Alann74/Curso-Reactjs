@@ -5,8 +5,7 @@ const BlusasList = ( {blusas} ) => {
         <div style={{ display: 'flex' }}>
         { 
             blusas.map(blusas => (
-                <Blusas key={blusas.id} note={blusas}/>
-            )) 
+                <Blusas key={blusas.id} blusa={blusas}/>                )) 
         } 
     </div>
     )
