@@ -12,8 +12,8 @@ import BlusasContainer from '../BlusasContainer/BlusasContainer';
 // import { getBlusasById } from '../../asyncMock'
 // import { useParams } from 'react-router-dom'
 
-const Blusas = ( {blusa} ) => { 
-  // const [blusa, setBlusa] = useState({})
+const Blusas = ( {blusa} ) => {
+    // const [blusa, setBlusa] = useState({})
   // const [isLoading, setIsLoading] = useState(true)
   // const { blusaId } = useParams()
   // const [page, setPage] = useState('productos')

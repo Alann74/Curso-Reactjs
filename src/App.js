@@ -17,12 +17,12 @@ function App() {
     <div className="App">        
         <BrowserRouter>
         <Navbar/>      
-        <BlusasContainer />
         {/* <ItemListContainer1 className="saludo" greeting='Productos'/>       */}
           <Routes>
             <Route path='/menu' element= {<Menu/>} /> 
             <Route path='/' element= {<Product/>} /> 
             <Route path='/blusa' element= {<Blusas/> } /> 
+            <Route  path='/' element={<BlusasContainer/>} /> 
             <Route path='/remera' element= {<Remeras/> } /> 
             <Route path='/blusa/Art.1974' element= {<VerMas/> } /> 
           </Routes>
