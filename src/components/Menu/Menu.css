@@ -1,0 +1,66 @@
+#arrives{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+
+.card1 {
+    display:inline-block;
+    width: 33%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(113, 113, 113);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .title {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: rgb(255, 60, 60);
+  }
+  
+  .copy {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.35;
+    color: rgb(255, 255, 255);
+  }
+  .btn1 {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 57, 57);
+    border: none;
+  }
+  .btn1:hover {
+    background-color: #ff0000;
+  }
+  .btn1:focus {
+    outline: 1px dashed rgb(255, 0, 0);
+    outline-offset: 3px;
+  }
+
+  /* .card:nth-child(1):before {
+    background-image: url(./images/modelo4.jpg);
+    box-shadow: 10px 5px 5px black;
+  }
+  .card:nth-child(2):before {
+    background-image: url(./images/modelo3.jpg);
+  }
+  .card:nth-child(3):before {
+    background-image: url(./images/modelo.jpg);
+  }
+  .card:nth-child(4):before {
+    background-image: url(./images/mdoelo1.jpg);
+  } */
+  .foto  {
+    width:250px;
+}
