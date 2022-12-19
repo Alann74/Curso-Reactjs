@@ -17,7 +17,7 @@ const BlusasContainer = () => {
 
     return(
         <div>
-           <h1>Blusas1</h1>
+           <h1>Blusas</h1>
            <BlusasList blusas={blusas}/>
         </div>
     )
