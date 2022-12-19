@@ -22,7 +22,7 @@ const Blusas = ( {blusa} ) => {
   //     return <h1>Cargando Nota...</h1>
   // }
 
-    return (
+    return ( 
       <div className="App1">
         <BlusasContainer/>
         <h2 >{blusa.id}</h2>
